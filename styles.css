@@ -98,25 +98,69 @@ nav ul li a {
 }
 
 /* Job Listings Section Styles */
-.jobs {
-  padding: 80px 0;
+.job-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between grid items */
 }
 
-.jobs h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+.job {
+  background-color: #f9f9f9; /* Background color for job listings */
+  padding: 20px; /* Padding around each job listing */
+  border-radius: 5px; /* Rounded corners */
 }
+
+.title {
+  font-size: 1.2em; /* Font size for job title */
+  margin-bottom: 10px; /* Spacing below job title */
+}
+
+.company {
+  font-weight: bold; /* Bold font for company name */
+}
+
+.location {
+  color: #666; /* Color for location */
+}
+
+.apply-btn {
+  background-color: #ffd700; /* Gold background color for apply button */
+  color: #333; /* Dark text color for apply button */
+  padding: 10px 20px; /* Padding for apply button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1em; /* Font size for apply button text */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.apply-btn:hover {
+  background-color: #ffc107; /* Darker gold color on hover */
+}
+
 
 /* Testimonials Section Styles */
 .testimonials {
-  padding: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between testimonials */
 }
 
-.testimonials h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+.testimonial {
+  background-color: #f9f9f9; /* Background color for testimonials */
+  padding: 20px; /* Padding around each testimonial */
+  border-radius: 5px; /* Rounded corners */
 }
 
+.quote {
+  font-style: italic; /* Italic font style for quotes */
+  margin-bottom: 10px; /* Spacing below quote */
+}
+
+.author {
+  font-weight: bold; /* Bold font for author */
+}
 /* Footer Styles */
 footer {
   background-color: #333;
@@ -178,4 +222,18 @@ nav ul li {
 footer {
     padding: 10px 0; /* Decrease padding */
 }
+}
+
+.social-icons {
+  margin-top: 20px; /* Add some spacing between hero content and social icons */
+}
+
+.social-icons a {
+  display: inline-block; /* Display icons inline */
+  margin-right: 10px; /* Add spacing between icons */
+}
+
+.social-icons img {
+  width: 40px; /* Set a fixed width for icons */
+  height: auto; /* Maintain aspect ratio */
 }
